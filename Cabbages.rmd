@@ -1,7 +1,7 @@
 ---
 title: "Cabbages"
-author: "Put your name here!"
-date: "put the date here"
+author: "Jennifer Alavrez"
+date: "9/10/2020"
 output:
   html_document:
     df_print: paged
@@ -21,6 +21,8 @@ veggy <- cabbages
  
 ### Is there a difference in average VitC between c39 and c52 cultivation methods?  
 
+response variable vitc is numeric, cultivation methods are categorical. 
+
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
@@ -34,6 +36,9 @@ veggy <- cabbages
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+plot(VitC~Cult,data=veggy)
+```
 
 ### Numerical Descriptive Results
 
